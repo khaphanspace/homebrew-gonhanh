@@ -1,6 +1,6 @@
 cask "gonhanh" do
-  version "1.0.60"
-  sha256 "fc929d69fc70f4bb37bc056072fa580e3e8f944617cae7c45b0b1968e3529dd2"
+  version "1.0.62"
+  sha256 "8d08f57e9cfd5932ed9029bb3c6812e373fdabaf27b3df6c21fa164bc0eecadb"
 
   url "https://github.com/khaphanspace/gonhanh.org/releases/download/v#{version}/GoNhanh.dmg"
   name "Gõ Nhanh"
@@ -16,8 +16,8 @@ cask "gonhanh" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Gõ Nhanh.app"],
-                   sudo: false
+         args: ["-cr", "#{appdir}/Gõ Nhanh.app"],
+         sudo: false
   end
 
   zap trash: [
