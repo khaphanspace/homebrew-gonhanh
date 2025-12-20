@@ -1,6 +1,6 @@
 cask "gonhanh" do
-  version "1.0.73"
-  sha256 "10659a79393ba252af21f2f79887bdd9c8dfd927efd5af71d368a850ca58cec8"
+  version "1.0.74"
+  sha256 "48ef48533f2492388d55cf70a8bf5b6dc586cf71ce3ee38606157bd28594ee7a"
 
   url "https://github.com/khaphanspace/gonhanh.org/releases/download/v#{version}/GoNhanh.dmg"
   name "Gõ Nhanh"
