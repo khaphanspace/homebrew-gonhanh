@@ -7,6 +7,8 @@ cask "gonhanh" do
   desc "High-performance Vietnamese Input Method Engine for macOS"
   homepage "https://github.com/khaphanspace/gonhanh.org"
 
+  auto_updates true
+
   livecheck do
     url :url
     strategy :github_latest
