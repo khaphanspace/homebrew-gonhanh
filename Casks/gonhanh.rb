@@ -16,9 +16,14 @@ cask "gonhanh" do
 
   app "GoNhanh.app"
 
+  uninstall quit: "org.gonhanh.GoNhanh"
+
   postflight do
     system_command "/usr/bin/xattr",
          args: ["-cr", "#{appdir}/GoNhanh.app"],
+         sudo: false
+    system_command "/usr/bin/open",
+         args: ["-a", "GoNhanh"],
          sudo: false
   end
 
