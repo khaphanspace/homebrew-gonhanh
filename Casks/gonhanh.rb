@@ -30,10 +30,13 @@ cask "gonhanh" do
   postflight do
     system_command "/usr/bin/xattr",
          args: ["-cr", "#{appdir}/GoNhanh.app"],
-         sudo: false
+         sudo: false,
+         must_succeed: false
+    # Use full path - launch services may not have indexed app yet on first install
     system_command "/usr/bin/open",
-         args: ["-a", "GoNhanh"],
-         sudo: false
+         args: ["#{appdir}/GoNhanh.app"],
+         sudo: false,
+         must_succeed: false
   end
 
   zap trash: [
