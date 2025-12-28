@@ -1,6 +1,6 @@
 cask "gonhanh" do
-  version "1.0.92"
-  sha256 "fdab859d1e0e0e35dc4182452c61764f7906d26fae069393d87ccb13ae95ade7"
+  version "1.0.93"
+  sha256 "76efaed38548649f053a0cd091c41e1eceeeef0a292f753edbb3afe29af97e54"
 
   url "https://github.com/khaphanspace/gonhanh.org/releases/download/v#{version}/GoNhanh.dmg"
   name "Gõ Nhanh"
@@ -17,7 +17,6 @@ cask "gonhanh" do
   app "GoNhanh.app"
 
   preflight do
-    # Quit app before install/reinstall
     system_command "/usr/bin/osascript",
          args: ["-e", 'tell application id "org.gonhanh.GoNhanh" to quit'],
          sudo: false
