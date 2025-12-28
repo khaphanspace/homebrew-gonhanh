@@ -17,9 +17,11 @@ cask "gonhanh" do
   app "GoNhanh.app"
 
   preflight do
+    # must_succeed: false - allows first install when app doesn't exist yet
     system_command "/usr/bin/osascript",
          args: ["-e", 'tell application id "org.gonhanh.GoNhanh" to quit'],
-         sudo: false
+         sudo: false,
+         must_succeed: false
     sleep 1
   end
 
