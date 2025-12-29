@@ -17,9 +17,10 @@ cask "gonhanh" do
   app "GoNhanh.app"
 
   preflight do
-    system_command "/usr/bin/osascript",
-         args: ["-e", 'tell application id "org.gonhanh.GoNhanh" to quit'],
-         sudo: false
+    system_command "/usr/bin/pkill",
+         args: ["-x", "GoNhanh"],
+         sudo: false,
+         must_succeed: false
     sleep 1
   end
 
