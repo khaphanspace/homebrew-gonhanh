@@ -1,36 +1,34 @@
-# Homebrew Tap for Gõ Nhanh
+# ⚠️ This Repository is Archived
 
-High-performance Vietnamese Input Method Engine for macOS.
+**Gõ Nhanh is now available on the official Homebrew repository.**
 
-**Main Repository:** [khaphanspace/gonhanh.org](https://github.com/khaphanspace/gonhanh.org)
+---
 
-## Installation
+## 🎉 Official Homebrew Cask
+
+Gõ Nhanh has been accepted into the official [Homebrew Cask](https://formulae.brew.sh/cask/gonhanh) repository. This custom tap is no longer maintained.
+
+### Installation (New Method)
 
 ```bash
-brew tap khaphanspace/gonhanh
 brew install --cask gonhanh
 ```
 
-## Update
+No tap required. Updates are handled automatically by Homebrew's autobump system.
 
-The app has **built-in auto-update** that checks for new releases every 24 hours.
+### Migration (Existing Users)
 
-If you prefer manual update via Homebrew:
-```bash
-brew reinstall gonhanh
-```
-
-> Note: `brew upgrade` skips this app (due to `auto_updates true`). The app will automatically quit, update, and restart when using `brew reinstall`.
-
-## Uninstall
+If you previously installed via this tap:
 
 ```bash
-brew uninstall --cask gonhanh
 brew untap khaphanspace/gonhanh
+brew reinstall --cask gonhanh
 ```
 
-## About
+---
 
+## Links
+
+- **Official Homebrew Cask:** https://formulae.brew.sh/cask/gonhanh
+- **Main Repository:** https://github.com/khaphanspace/gonhanh.org
 - **Homepage:** https://gonhanh.org
-- **Source Code:** https://github.com/khaphanspace/gonhanh.org
-- **License:** MIT
